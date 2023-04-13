@@ -1,6 +1,6 @@
 # azure-openai-gpt4-voice-chatbot
 
-In project, we’ll explore how to integrate Azure OpenAI service and Azure Speech service to create a chatbot that users can interact with via voice.
+This project demonstrate the integration of Azure OpenAI service and Azure Speech service to create a chatbot that users can interact with via voice.
     
 [![Alt text](https://img.youtube.com/vi/I08pmoEMiqU/maxresdefault.jpg)](https://www.youtube.com/watch?v=I08pmoEMiqU)
 
