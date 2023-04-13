@@ -1,6 +1,8 @@
 # azure-openai-gpt4-voice-chatbot
 
 In project, we’ll explore how to integrate Azure OpenAI service and Azure Speech service to create a chatbot that users can interact with via voice.
+    
+[![Alt text](https://img.youtube.com/vi/I08pmoEMiqU/maxresdefault.jpg)](https://www.youtube.com/watch?v=I08pmoEMiqU)
 
 ## What is the difference between Azure OpenAI and OpenAI
 Azure OpenAI Service provides customers with access to advanced language AI capabilities through OpenAI’s GPT-4, GPT-3, Codex, and DALL-E models, all with the added security and enterprise support of Azure. Co-developed with OpenAI, Azure OpenAI ensures compatibility and a seamless transition between the two platforms. By using Azure OpenAI, customers can leverage the same models as OpenAI while benefiting from the security features of Microsoft Azure, such as private networking and regional availability. Additionally, Azure OpenAI promotes responsible AI by offering content filtering capabilities.
