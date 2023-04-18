@@ -7,12 +7,17 @@ openai.api_type = "azure"
 openai.api_base = os.getenv("OPENAI_ENDPOINT")
 openai.api_version = "2023-03-15-preview"
 openai.api_key = os.getenv("OPENAI_API_KEY")
+# Set up OpenAI deployment model name
+engine_name = "test"
 
 # Set up Azure Speech-to-Text and Text-to-Speech credentials
 speech_key = os.getenv("SPEECH_API_KEY")
 service_region = "eastus"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+# Set up Azure Text-to-Speech language 
 speech_config.speech_synthesis_language = "en-NZ"
+# Set up Azure Speech-to-Text language recognition
+speech_config.speech_recognition_language = "en-NZ"
 
 # Set up the voice configuration
 speech_config.speech_synthesis_voice_name = "en-NZ-MollyNeural"
@@ -53,7 +58,7 @@ def text_to_speech(text):
 # Define the Azure OpenAI language generation function
 def generate_text(prompt):
     response = openai.ChatCompletion.create(
-        engine="test",
+        engine=engine_name,
         messages=[
             {"role": "system", "content": "You are an AI assistant that helps people find information."},
             {"role": "user", "content": prompt}
